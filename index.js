@@ -5,7 +5,7 @@ const { check, validationResult } = require('express-validator');
 const Movies = Models.Movie;
 const Users = Models.User;
 
-mongoose.connect('mongodb://localhost:27017/cfDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://myFlixAppAdmin:AdminFlixpassword@my-flix-application.mcflq.mongodb.net/myFlixDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const bodyParser = require("body-parser");
 const express = require('express');
 const morgan = require('morgan');
